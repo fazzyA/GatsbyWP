@@ -1,0 +1,30 @@
+@import "../../sass/essentials";
+
+.post-content-wrap {
+
+	padding-bottom: 48px;
+
+	&.has-sidebar {
+		display: grid;
+		grid-template-columns: 100%;
+
+		@media only screen and ( min-width: $tablet ) {
+			grid-template-columns: 70% 30%;
+		}
+	}
+
+	.post-content {
+
+		padding-bottom: 48px;
+
+		@media only screen and ( min-width: $tablet ) {
+			padding-bottom: 0;
+		}
+	}
+
+	.aside {
+		@media only screen and ( min-width: $tablet ) {
+			padding-left: 48px;
+		}
+	}
+}
